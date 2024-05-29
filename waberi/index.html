@@ -3,16 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Profile</title>
+    <title>Card Profile</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="image/favicon.png" type="image/png"> 
+   
 </head>
+
 <body>
+   
+    <!-- Overlay Navigation -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <!-- Open button for the overlay navigation -->
+    <span style="font-size:30px;cursor:pointer;color:white;position:absolute;top:20px;left:20px" onclick="openNav()">&#9776; Menu</span>
 
     <div class="card">
         <img src="image/profile.img.jpg" alt="Profile Picture" class="profile-img">
         <h1>Waberi</h1>
-        <p class="title">Web Developer</p>
+        <p class="title">Junior Web Developer</p>
         <p>Ottawa, Ontario</p>
         <div class="social-links">
             <a href="mailto:waberi94@hotmail.com">Email</a>
@@ -25,5 +41,14 @@
         </div>
     </div>
 
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
 </body>
 </html>
