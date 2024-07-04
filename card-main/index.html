@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="image/favicon.png" type="image/png"> 
+   
+</head>
+
+<body>
+   
+    <!-- Overlay Navigation -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="projects.html">Projects</a>
+        </div>
+    </div>
+
+    <!-- Open button for the overlay navigation -->
+    <span style="font-size:30px;cursor:pointer;color:white;position:absolute;top:20px;left:20px" onclick="openNav()">&#9776; Menu</span>
+
+    <div class="card">
+        <img src="image/profile.img.jpg" alt="Profile Picture" class="profile-img">
+        <h1>Waberi</h1>
+        <p class="title">Junior Web Developer</p>
+        <p>Ottawa, Ontario</p>
+        <div class="social-links">
+            <a href="mailto:waberi94@hotmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/waberi-mouhoumed-84263a22b/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Waberi94" target="_blank">Github</a>
+            <p>Hello World! My name is Waberi, i am self-taught developer based in ottawa.</p>
+        </div>
+        
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</body>
+</html>
